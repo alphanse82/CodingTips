@@ -71,7 +71,10 @@ namespace myProgramTips
 
         int[] output = {1, 2, 3};
         Array.Fill(output,0);
-
+        Array.Sort(nums);
+        Array.Sort(nums, (i,j) => nums[i].CompareTo(nums[j]) );
+        Array.Sort(input, (i,j) => nums[i].CompareTo(nums[j]) );
+        
         int min = int.MaxValue;
         int max = int.MinValue;
 
@@ -80,11 +83,7 @@ namespace myProgramTips
 
         char c = '5'
         int i = c -'49' ; // 4 
-
-        Array.Sort(nums);
-        Array.Sort(nums, (i,j) => nums[i].CompareTo(nums[j]) );
-        Array.Sort(input, (i,j) => nums[i].CompareTo(nums[j]) );
-
+       
         //List
         List<int> parts = new List<int>();
         parts.Add(1234);
@@ -99,7 +98,6 @@ namespace myProgramTips
         output.Add(new List<int>());
         output[level].Add(20);
         output.Count
-
 
         int caseSwitch = 1;
         
