@@ -1,6 +1,7 @@
 // Iterative
 public bool binary_search(int num, int[] input) 
 {
+  
   int left = 0;
   int right = input.Length -1;
     
