@@ -46,6 +46,14 @@ namespace myProgramTips
 
         HashSet<int> map = new HashSet<int>();
         map.Contains(5)
+        
+        // queue or stack with keyvaluepair
+        Queue<KeyValuePair<TreeNode,int>> queue = new Queue<KeyValuePair<TreeNode, int>>();
+        queue.Enqueue( new KeyValuePair<TreeNode,int>(root, 0));
+        KeyValuePair<TreeNode,int> head = queue.Peek();
+        KeyValuePair<TreeNode,int> elem = queue.Dequeue();
+
+        
 
         char[] str = new char[10];
         string input =  new String(str);
